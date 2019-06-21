@@ -3,7 +3,7 @@ function produceDrivingRange(range) {
   return function(startingBlock, endingBlock) {
      let num1 = parseInt(startingBlock);
      let num2 = parseInt(endingBlock);
-     let blocks = num1 - num2;
+     let blocks = Math.abs(num1 - num2);
      console.log(`blocks = ${blocks}`);
      blocks = (blocks > 0 ? blocks : -(blocks));
      console.log(`range = ${range}, blocks = ${blocks}`);
