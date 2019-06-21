@@ -5,7 +5,6 @@ function produceDrivingRange(range) {
      let num2 = parseInt(endingBlock);
      let blocks = Math.abs(num1 - num2);
      let differences = blocks - range;
-     console.log(`differences = ${differences}`);
      if (differences > 0)  {
        return (`${differences} blocks out of range`);
      } else {
